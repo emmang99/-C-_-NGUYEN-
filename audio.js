@@ -1,16 +1,16 @@
-const keys = document.querySelectorAll('.sound');
+const keys = document.querySelectorAll('.button');
 const effect = document.querySelectorAll('nav>a');
 
-function clickSound(e){
-  let soundKey = e.target.dataset['sound'];
-  let audio = document.querySelector(`audio[data-sound="${soundKey}"]`);
+function clickButton(e){
+  let buttonKey = e.target.dataset['button'];
+  let audio = document.querySelector(`audio[data-button="${buttonKey}"]`);
   audio.currentTime = 0;
   audio.play();
 
 }
 
 keys.forEach(function(key){
-    key.addEventListener("click", clickSound);
+    key.addEventListener("click", clickButton);
 });
 
 function switchEffect(e){
