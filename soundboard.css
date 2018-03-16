@@ -37,6 +37,7 @@ nav img {
 h1 {
   font-size: 70px;
   font-family: 'Dosis', sans-serif;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 #game,#quote {
@@ -87,13 +88,6 @@ section > div {
   font-size: 15px;
 }
 
-.sounds .button {
-  background-color: white;
-  padding: 5px 50px;
-  color: #34495E;
-  cursor: pointer;
-}
-
 .sounds img {
   width: 190px;
   height: 150px;
@@ -103,8 +97,17 @@ section > div {
 .sounds li {
   padding: 5px;
   background-color: black;
+  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.5);
   width: 200px;
   height: 200px;
+}
+
+.sounds li a:hover {
+  background-color: white;
+  padding: 5px 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  color: #34495E;
+  cursor: pointer;
 }
 
 footer nav {
